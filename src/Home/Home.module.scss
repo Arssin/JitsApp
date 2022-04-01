@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 19rem;
+  gap: 15rem;
   background: url(../images/home-background-main.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -13,13 +13,68 @@
 
   .homeText {
     color: white;
-    height: 5rem;
+    height: 10rem;
+    margin: 1rem 1rem 0 1rem;
   }
 
-  .homeDivBtn {
-    height: 4rem;
-    .homeBtn {
-      color: green;
+  .homeBtn {
+    opacity: 1;
+    outline: 0;
+    color: rgb(213, 222, 226);
+    position: relative;
+    line-height: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-size: 0.8rem bold;
+
+    &:hover {
+      &:after {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+      }
+
+      &:before {
+        opacity: 0;
+        transform: translateY(50%) rotateX(90deg);
+      }
+    }
+
+    &:after {
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      color: #323237;
+      transition: 0.5s;
+      position: absolute;
+      background: #5190ee;
+      content: attr(data-back);
+      transform: translateY(-50%) rotateX(90deg);
+      border: 5px inset #1c6ea4;
+      height: 3rem;
+      line-height: 3rem;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      opacity: 1;
+      color: #a6bebe;
+      display: block;
+      padding: 0 30px;
+      transition: 0.5s;
+      position: relative;
+      background: #d85e25;
+      content: attr(data-front);
+      transform: translateY(0) rotateX(0);
+      border: 5px inset #cc7e09;
+      height: 3rem;
+      width: 9rem;
+      line-height: 1.5rem;
     }
   }
 }
