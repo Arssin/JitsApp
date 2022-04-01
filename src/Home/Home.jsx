@@ -8,7 +8,7 @@ export function HomePage() {
         adipiscinglorem ipsum dolor sit amet, consectetur adipiscinglorem ipsum dolor sit amet, consectetur
       </div>
       <div className={styles.homeDivBtn}>
-        <button className={styles.homeBtn}>ClickMe</button>
+        <a href="#" className={styles.homeBtn} data-back="Ossssss!" data-front="Przejdź do aplikacji"></a>
       </div>
     </div>
   );
