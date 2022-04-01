@@ -1,9 +1,12 @@
 import styles from '../Home/Home.module.scss';
 
-export function HomePage(){
+export function HomePage() {
   return (
     <div className={styles.home}>
-      Witaj na stronie głównej Przybyszu!
+      <div className={styles.homeText}>Witaj na stronie głównej Przybyszu!</div>
+      <div>
+        <button className={styles.homeBtn}>ClickMe</button>
+      </div>
     </div>
-  )
+  );
 }

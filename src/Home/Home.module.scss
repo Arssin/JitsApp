@@ -1,9 +1,12 @@
 .home {
-  // background-color: rgb(115, 181, 219);
-  height: 93vh;
-  margin: 0;
-  // -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 4px 7px 4px rgba(84, 199, 255, 0.7);
-  // box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 4px 7px 4px rgba(84, 199, 255, 0.7);
-  background-image: url(../images/home-background-main.jpg);
-  background-repeat: inherit;
+  height: 83vh;
+  background: url(../images/home-background-main.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.homeText {
+  color: white;
 }
