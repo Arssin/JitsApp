@@ -1,10 +1,10 @@
 .home {
-  height: 83vh;
   display: flex;
+  min-height: 80vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15rem;
+  gap: 12rem;
   background: url(../images/home-background-main.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -13,11 +13,20 @@
 
   .homeText {
     color: white;
-    height: 10rem;
+    font-family: 'Amiri', serif;
+    min-height: 10rem;
+    max-width: 50rem;
     margin: 1rem 1rem 0 1rem;
+    text-align: center;
+
+    .welcomeText {
+      margin: 1rem 0 2rem 0;
+      font-size: 22px;
+    }
   }
 
   .homeBtn {
+    max-width: 50rem;
     opacity: 1;
     outline: 0;
     color: rgb(213, 222, 226);
@@ -48,13 +57,13 @@
       left: 0;
       opacity: 0;
       width: 100%;
-      color: #323237;
+      color: #bfbfcf;
       transition: 0.5s;
       position: absolute;
-      background: #5190ee;
+      background: #15171a;
       content: attr(data-back);
       transform: translateY(-50%) rotateX(90deg);
-      border: 5px inset #1c6ea4;
+      border: 5px inset #363f46;
       height: 3rem;
       line-height: 3rem;
     }
@@ -68,10 +77,10 @@
       padding: 0 30px;
       transition: 0.5s;
       position: relative;
-      background: #d85e25;
+      background: #383432;
       content: attr(data-front);
       transform: translateY(0) rotateX(0);
-      border: 5px inset #cc7e09;
+      border: 5px inset #9b9894;
       height: 3rem;
       width: 9rem;
       line-height: 1.5rem;
