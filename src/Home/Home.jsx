@@ -7,7 +7,7 @@ export function HomePage() {
         <div className={styles.welcomeText}>Witaj na JitsApp! </div>
         Jest to aplikacja, która ma na celu ułatwić ludziom trenującym Brazylijskie Jiu-Jitsu i osiągnie wymarzonego
         progressu. Zapominasz technik? Nie odnotowałeś kolejnych zawodów? Czy może jesteś po prostu ciekawski? - tutaj
-        znajdziesz wszystko czego potrzebujesz! TEKST TESTOWY!
+        znajdziesz wszystko czego potrzebujesz! TO JEST TEXT TESTOWY!
       </div>
       <div className={styles.homeDivBtn}>
         <a href="#" className={styles.homeBtn} data-back="Ossssss!" data-front="Przejdź do aplikacji"></a>
