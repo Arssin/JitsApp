@@ -1,4 +1,5 @@
 import styles from '../Home/Home.module.scss';
+import { Link } from 'react-router-dom';
 
 export function HomePage() {
   return (
@@ -9,9 +10,7 @@ export function HomePage() {
         wymarzonego progressu. Zapominasz technik? Nie odnotowałeś kolejnych zawodów? Czy może jesteś po prostu
         ciekawski? - tutaj znajdziesz wszystko czego potrzebujesz! TEXT TESTOWY!
       </div>
-      <div className={styles.homeDivBtn}>
-        <a href="#" className={styles.homeBtn} data-back="Ossssss!" data-front="Przejdź do aplikacji"></a>
-      </div>
+      <Link to="/menu" className={styles.homeBtn} data-back="Ossssss!" data-front="Przejdź do aplikacji" />
     </div>
   );
 }
