@@ -1,13 +1,8 @@
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { PageLayout } from './PageLayout/Pagelayout';
+import { Routing } from './Routes/Routing';
 
 function App() {
-  return (
-    <Router>
-      <PageLayout />
-    </Router>
-  );
+  return <Routing />;
 }
 
 export default App;
